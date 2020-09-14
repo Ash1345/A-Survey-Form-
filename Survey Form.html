@@ -1,0 +1,139 @@
+<style>body{
+  background: 	rgb( 50, 250, 250) ;
+  text-align:  center;
+}
+#description{
+  
+}
+h1{
+  font-size: 50px;
+}
+p{
+  font-size: 20px;
+}
+#survey-form{
+  display: block;
+  text-align: left;
+  box-shadow: 2px 5px 10px rgba(0,0,0,4);
+  margin: auto;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 2px; 
+  padding: 30px 20px;
+  font-family: Sans-serif;
+}
+#name-label{
+  
+}
+.form-name{
+  margin-bottom: 20px;
+}
+.form-email{
+  margin-right: 10px;
+}
+.form-number{
+  margin-top: 20px;
+  
+}
+#dropdown{
+  
+}
+#dropdown-name{
+  display: block;
+}
+#dropdown-control{
+  display: block;
+}
+#submit{
+  font-weight: 100px;
+}
+#number-label{
+  
+}</style>
+<h1 id="title">Coding Survey</h1>
+<p id="description">Thanks for taking out your precious time and helping us</p>
+<form id="survey-form">
+  <div class= "form-name"><label for="name"id ="name-label">NAME
+    <input type="text" id="name" placeholder="ENTER YOUR NAME" required>
+    </label></div>
+  <div class= "form-email"><label for="email" id="email-label">EMAIL
+  <input type="email" id="email" required placeholder="Email">
+    </label></div>
+  <div class="form-number"><label for="number" id="number-label">
+    NUMBER<input type="number" id="number" min="10" max="99" required placeholder="number" >
+  </label>
+<div id="dropdown">
+  <p>Which option best describes your current role?</p>
+  <select id="dropdown">
+     <option disabled selected value>Too late to select this</option>
+    <option>Student</option>
+    <option>Full time job </option>
+    <option>Full time learner</option>
+    <option>Prefer not to say</option>
+    <option>Other</option>
+  </select>
+</div>
+<div id="dropdown">
+  <p>Would you recommend coding to your friend? </p>
+  <label for="dropdown-name">
+    <input type="radio" id="dropdown-name"
+           value="Definitely" checked name="hold">Definitely
+  </label>
+  <label for="dropdown-name">
+    <input type="radio" id="dropdown-name"
+           value="Maybe" name="hold">Maybe</label>
+  <label for="dropdown-name">
+    <input type="radio" id="dropdown-name"
+           value="Not sure" name="hold">Not Sure</label>
+</div>
+<div id="dropdown">
+  <p> What is your favourite feature of coding?</p>
+<select id="dropdown">
+  <option disabled selected value>Select an option</option>
+  <option>Challenges</option>
+  <option>Projects</option>
+  <option>Community</option>
+  <option>open source</option>
+  </select> 
+  </div>
+<div id="dropdown">
+  <p>What are your interests? (Check all that apply)</p>
+  <label for ="dropdown-control">
+    <input type="checkbox" value="Front-end Projects
+"
+     id="dropdown-control">Front-end Projects
+</label>
+  <label for ="dropdown-control">
+    <input type="checkbox" value="Back-end Projects"
+     id="dropdown-control">Back-end Projects</label>
+  <label for ="dropdown-control">
+    <input type="checkbox" value="Data Visualization"
+     id="dropdown-control">Data Visualization</label>
+  <label for ="dropdown-control">
+    <input type="checkbox" value="Challenges"
+     id="dropdown-control">Python</label>
+  <label for ="dropdown-control">
+    <input type="checkbox" value="Open Source
+"
+     id="dropdown-control">Open Source
+</label>
+  <label for ="dropdown-control">
+    <input type="checkbox" value="Java"
+     id="dropdown-control">Java</label>
+  <label for ="dropdown-control">
+    <input type="checkbox" value="C"
+     id="dropdown-control">C</label>
+  <label for ="dropdown-control">
+    <input type="checkbox" value="C++"
+     id="dropdown-control">C++</label>
+<label for ="dropdown-control">
+    <input type="checkbox" value="Other"
+     id="dropdown-control">Other</label>
+</div>
+<div id="dropdown">
+  <p>Any comments or suggestions?</p>
+  <textarea id="comments">Additional comments
+  </textarea>
+</div>
+<button type="submit" id="submit">Submit</button>
+    </form>
